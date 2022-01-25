@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Distributedparallel]" parallel="tests">
+  <test thread-count="2" name="TestRunner-1(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.comcast.contacttest.CreateOrganization">
+        <methods>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="CreateContactWithOrgTest"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- com.crm.comcast.contacttest.CreateOrganization -->
+      <class name="practice.ProjectUnitTest">
+        <methods>
+          <include name="UnitTest"/>
+        </methods>
+      </class> <!-- practice.ProjectUnitTest -->
+    </classes>
+  </test> <!-- TestRunner-1(failed) -->
+  <test thread-count="2" name="TestRunner-2(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.comcast.contacttest.CreateOrganization">
+        <methods>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="CreateContactWithOrgTest"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+        </methods>
+      </class> <!-- com.crm.comcast.contacttest.CreateOrganization -->
+      <class name="practice.ProjectUnitTest">
+        <methods>
+          <include name="UnitTest"/>
+        </methods>
+      </class> <!-- practice.ProjectUnitTest -->
+    </classes>
+  </test> <!-- TestRunner-2(failed) -->
+</suite> <!-- Failed suite [Distributedparallel] -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeTest]">
+  <test thread-count="5" name="SmokeTest(failed)">
+    <groups>
+      <run>
+        <include name="smokeTest"/>
+        <include name="regressionTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.crm.comcas.orgTest.CreateOrganization">
+        <methods>
+          <include name="createOrgWithIndutriesTest"/>
+          <include name="createOrgTest"/>
+        </methods>
+      </class> <!-- com.crm.comcas.orgTest.CreateOrganization -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [SmokeTest] -->
